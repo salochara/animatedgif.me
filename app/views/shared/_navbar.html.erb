@@ -1,0 +1,39 @@
+<header class="relative z-10 border-b border-gray-200 bg-white flex items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+  <div class="flex items-end">
+    <a href="/components" class="block">
+      <img class="h-6 w-auto" src="/img/tailwindui-logo.svg" alt="Tailwind UI">
+    </a>
+    <p class="hidden md:block ml-4 text-sm leading-5 text-gray-500">
+      <a href="/changelog" class="hover:underline">Last updated Aug 19, 2020</a>
+    </p>
+  </div>
+
+  <div class="flex text-sm leading-5">
+    <a href="/components" class="font-medium text-gray-500 hover:text-gray-900">
+      Browse
+      <span class="hidden sm:inline">
+        components
+      </span>
+    </a>
+    <a href="/pricing" class="ml-4 font-medium text-gray-500 hover:text-gray-900 sm:ml-12">
+      Pricing
+      <span class="hidden sm:inline">
+        &amp; FAQ
+      </span>
+    </a>
+    <a href="/login" class="ml-4 font-medium text-gray-500 hover:text-gray-900 sm:ml-12">
+      Login
+    </a>
+  </div>
+  <p>
+    <%= link_to "Gifs", root_path %>
+    <% if user_signed_in?  %>
+      <%= link_to "Account", edit_user_registration_path %>
+      <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+    <% else  %>
+      <%= link_to "Login", new_user_registration_path %>
+      <%= link_to "Sign out", new_user_session_path %>
+    <% end %>
+  </p>
+
+</header>
