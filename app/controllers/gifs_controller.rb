@@ -14,6 +14,13 @@ class GifsController < ApplicationController
     @gif = Gif.find(params[:id])
   end
 
+  def random
+    # Runs a postgres query
+    @gif = Gif.tagged_with(params[:tag]).order("RANDOM()").first
+
+    render :show
+  end
+
   # GET /gifs/new
   def new
     @gif = Gif.new

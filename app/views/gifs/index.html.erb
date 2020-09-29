@@ -2,26 +2,15 @@
 
 <h1>Gifs</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>User</th>
-      <th>Image data</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<div class=" container mx-auto mt-10 flex flex-grow justify-center">
+  <% @gifs.each do |gif| %>
+    <div class="max-w-xs m-4 rounded shadow ">
+      <%= link_to image_tag(gif.image_url), gif, class: "mx-auto" %>
+      <div class="p-2 text-center text-sm">
+        <%= linked_tag_list gif %>
+      </div>
+    </div>
+  <% end %>
+</div>
 
-  <tbody>
-    <% @gifs.each do |gif| %>
-      <tr>
-        <td><%= gif.user_id %></td>
-        <td><%= gif.image_data %></td>
-        <td><%= link_to 'Show', gif %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
-<br>
-
-<%= link_to 'New Gif', new_gif_path %>

@@ -8,8 +8,8 @@
           <%= link_to "Gifs", root_path, class: "block lg:mr-4"%>
         </div>
       </div>
-
       <div>
+        <%= link_to 'New Gif', new_gif_path %>
         <% if user_signed_in?  %>
           <%= link_to "Account", edit_user_registration_path %>
           <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
@@ -18,7 +18,6 @@
           <%= link_to "Sign out", new_user_session_path %>
         <% end %>
       </div>
-
     </div>
   </div>
 </div>
