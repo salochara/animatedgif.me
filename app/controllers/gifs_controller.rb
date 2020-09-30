@@ -16,8 +16,9 @@ class GifsController < ApplicationController
 
   def random
     # Runs a postgres query
-    @gif = Gif.tagged_with(params[:tag]).order("RANDOM()").first
-
+    @gif = Gif.tagged_with(params[:tag]).random
+    # https://stackoverflow.com/questions/995593/what-does-or-equals-mean-in-ruby
+    @gif ||= Gif.random
     render :show
   end
 

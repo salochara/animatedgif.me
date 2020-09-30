@@ -7,6 +7,11 @@
   <p>Uploaded by: <%=  @gif.user.email %> </p>
   <p> <%= linked_tag_list @gif %> </p>
 
+  <div data-controller="clipboard">
+    <%= text_field_tag nil, @gif.image_url, data: { target: "clipboard.source" } %>
+    <button data-action="click->clipboard#copy">Copy to clipboard</button>
+  </div>
+
   <% if user_signed_in? && current_user == @gif.user  %>
     <%= link_to 'Edit', edit_gif_path(@gif) %>
   <% end %>

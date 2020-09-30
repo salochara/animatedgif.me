@@ -4,4 +4,8 @@ class Gif < ApplicationRecord
   belongs_to :user
 
   acts_as_taggable
+
+  def self.random
+    order("RANDOM()").first
+  end
 end
