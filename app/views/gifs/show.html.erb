@@ -1,19 +1,29 @@
 <p id="notice"><%= notice %></p>
 
+<div class="w-64 mx-auto mt-10">
 
-<div class="container mx-auto">
   <%= image_tag @gif.image_url %>
 
-  <p>Uploaded by: <%=  @gif.user.email %> </p>
-  <p> <%= linked_tag_list @gif %> </p>
+  <div class="flex justify-between text-xs my-2">
+    <div class="text-gray-700">
+      Uploaded by: <%=  @gif.user.email %>
+    </div>
 
-  <div data-controller="clipboard">
-    <%= text_field_tag nil, @gif.image_url, data: { target: "clipboard.source" } %>
-    <button data-action="click->clipboard#copy">Copy to clipboard</button>
+    <div>
+      <% if user_signed_in? && current_user == @gif.user  %>
+        <%= link_to ' Edit', edit_gif_path(@gif) %>
+      <% end %>
+    </div>
   </div>
 
-  <% if user_signed_in? && current_user == @gif.user  %>
-    <%= link_to 'Edit', edit_gif_path(@gif) %>
-  <% end %>
+  <div class= "flex text-xs" data-controller="clipboard" >
+    <%= text_field_tag nil, full_gif_url(@gif), data: { target: "clipboard.source" }, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded-l w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" %>
+    <button data-action="click->clipboard#copy" data-target="clipboard.button" class="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded-r" >Copy</button>
+  </div>
+
+  <div class="text-center text-sm mt-3">
+    <%= linked_tag_list @gif %>
+  </div>
+
 
 </div>

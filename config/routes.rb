@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
 
   resources :gifs
+  resources :users, only: [:index]
 
   root to: 'gifs#index'
 

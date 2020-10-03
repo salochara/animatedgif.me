@@ -7,4 +7,10 @@ module GifsHelper
 
     safe_join list, ", "
   end
+
+  def full_gif_url(gif)
+    gif.image_url(host: request.protocol + request.host_with_port)
+  end
+
+
 end
