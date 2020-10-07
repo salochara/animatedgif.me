@@ -16,15 +16,15 @@
     <%= form.label :image %>
     <!--    Hidden field must come before the file field -->
     <%= form.hidden_field :image, value: form.object.cached_image_data %>
-    <%= form.file_field :image %>
+    <%= form.file_field :image, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= form.label :tag_list %>
-    <%= form.text_field :tag_list , value: form.object.tag_list.join(" , ")%>
+    <%= form.text_field :tag_list , value: form.object.tag_list.join(" , "),class: "form-control" %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: "btn btn-purple"%>
   </div>
 <% end %>

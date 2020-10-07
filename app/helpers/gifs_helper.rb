@@ -1,8 +1,10 @@
 module GifsHelper
   def linked_tag_list(gif)
-
-    list = gif.tag_list.map do |tag_name|
-      link_to tag_name, random_gif_path(tag: tag_name)
+    # TIP
+    # gif.tags.map instead of gif.tag_list.map for making only one
+    # query for the index page. Optimization
+    list = gif.tags.map do |tag|
+      link_to tag.name, random_gif_path(tag: tag.name)
     end
 
     safe_join list, ", "
