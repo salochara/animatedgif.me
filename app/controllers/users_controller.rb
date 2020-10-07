@@ -2,9 +2,13 @@ class UsersController < ApplicationController
   before_action :set_user
 
   def index
-    @gifs = @user.gifs.sorted
+    redirect_to root_path
   end
 
+  def show
+    @gifs = @user.gifs.sorted
+    render 'gifs/index'
+  end
 
   private
 

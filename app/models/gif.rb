@@ -6,7 +6,7 @@ class Gif < ApplicationRecord
   acts_as_taggable
 
   # Cool tip
-  scope :sorted, -> { where(created_at: :desc) }
+  scope :sorted, -> { order(created_at: :desc) }
 
   def self.random
     order("RANDOM()").first

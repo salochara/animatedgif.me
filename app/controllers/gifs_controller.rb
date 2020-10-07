@@ -6,7 +6,6 @@ class GifsController < ApplicationController
   # GET /gifs.json
   def index
     @gifs = Gif.sorted
-
   end
 
   # GET /gifs/1

@@ -6,7 +6,9 @@
 
   <div class="flex justify-between text-xs my-2">
     <div class="text-gray-700">
-      Uploaded by: <%=  @gif.user.email %>
+      <!-- TIP: @gif.user.name possible because of "name of person gem" -->
+      <!-- @gif.user goes to show in user controller -->
+      Uploaded by: <%= link_to @gif.user.name, @gif.user %>
     </div>
 
     <div>
