@@ -6,7 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="cc4ced97-2b68-4e1e-a4b9-30126e6e4789" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/stylesheets/application.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/gifs/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/gifs/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/gifs/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/gifs/edit.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/gifs/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/gifs/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,9 +28,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectConfig">
-    <option name="enabled" value="false" />
   </component>
   <component name="ProjectId" id="1hvCKgbSCfkdwEW4TgsWVq7wNZw" />
   <component name="ProjectViewState">
@@ -48,7 +51,10 @@
       <recent name="$PROJECT_DIR$/app/stylesheets" />
     </key>
   </component>
-  <component name="RunManager" selected="Rails.Development: animatedgif.me">
+  <component name="RunManager" selected="JavaScript Debug._form">
+    <configuration name="_form" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://0.0.0.0:3000/gifs/_form">
+      <method v="2" />
+    </configuration>
     <configuration name="Development: animatedgif.me" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="animatedgif.me" />
       <predefined_log_file enabled="true" id="RUBY_RAILS_SERVER" />
@@ -146,6 +152,11 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TESTOPTS" VALUE="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug._form" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
@@ -159,7 +170,7 @@
       <workItem from="1600882127477" duration="5803000" />
       <workItem from="1600990684217" duration="8628000" />
       <workItem from="1601420374121" duration="8515000" />
-      <workItem from="1602087463899" duration="7825000" />
+      <workItem from="1602087463899" duration="11389000" />
     </task>
     <servers />
   </component>
@@ -167,28 +178,28 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="86" y="173" key="SettingsEditor" timestamp="1602095077596">
+    <state x="53" y="163" key="SettingsEditor" timestamp="1602194422549">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="86" y="173" key="SettingsEditor/0.23.1920.1057@0.23.1920.1057" timestamp="1602095077596" />
-    <state width="757" height="445" key="SwitcherDM" timestamp="1602193821602">
+    <state x="53" y="163" key="SettingsEditor/0.23.1920.1057@0.23.1920.1057" timestamp="1602194422549" />
+    <state width="757" height="445" key="SwitcherDM" timestamp="1602194917233">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="757" height="445" key="SwitcherDM/0.23.1920.1057@0.23.1920.1057" timestamp="1602193821602" />
+    <state width="757" height="445" key="SwitcherDM/0.23.1920.1057@0.23.1920.1057" timestamp="1602194917233" />
     <state width="757" height="445" key="SwitcherDM/1280.23.1920.1057/0.23.1280.777@1280.23.1920.1057" timestamp="1601079885069" />
-    <state x="1147" y="306" width="586" height="490" key="find.popup" timestamp="1602091344532">
+    <state x="1147" y="306" width="586" height="490" key="find.popup" timestamp="1602195423586">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="1147" y="306" width="586" height="490" key="find.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1602091344532" />
+    <state x="1147" y="306" width="586" height="490" key="find.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1602195423586" />
     <state x="2427" y="306" width="586" height="490" key="find.popup/1280.23.1920.1057/0.23.1280.777@1280.23.1920.1057" timestamp="1601080025375" />
     <state x="1105" y="256" key="run.anything.popup" timestamp="1600892675668">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="1105" y="256" key="run.anything.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1600892675668" />
-    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1602193889539">
+    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1602196617245">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1602193889539" />
+    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1602196617245" />
     <state x="2385" y="258" width="670" height="676" key="search.everywhere.popup/1280.23.1920.1057/0.23.1280.777@1280.23.1920.1057" timestamp="1601079779869" />
   </component>
   <component name="XDebuggerManager">

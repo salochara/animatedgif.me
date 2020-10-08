@@ -11,20 +11,34 @@
     </div>
   <% end %>
 
+<!--  TIP: Checks if the image already exists-->
 
-  <div class="field">
-    <%= form.label :image %>
-    <!--    Hidden field must come before the file field -->
-    <%= form.hidden_field :image, value: form.object.cached_image_data %>
-    <%= form.file_field :image, class: "form-control" %>
-  </div>
+    <div class="field">
+
+      <% if form.object.persisted? %>
+        <%= image_tag form.object.image_url,class: "mx-auto" %>
+      <% else %>
+        <%= form.label :image %>
+        <!--    Hidden field must come before the file field -->
+        <%= form.hidden_field :image, value: form.object.cached_image_data %>
+        <%= form.file_field :image, class: "form-control" %>
+      <% end %>
+
+    </div>
+
+
 
   <div class="field">
     <%= form.label :tag_list %>
     <%= form.text_field :tag_list , value: form.object.tag_list.join(" , "),class: "form-control" %>
   </div>
 
-  <div class="actions">
-    <%= form.submit class: "btn btn-purple"%>
+  <div class="actions flex justify-between items-center">
+    <div>
+      <%= form.submit class: "btn btn-purple"%>
+      <%= link_to 'Cancel', (@gif.persisted? ? @gif : root_path), class: "ml-4" %>
+    </div>
+
+    <%= link_to 'Destroy', @gif, method: :delete, data: {confirm: 'Are you sure?'} if @gif.persisted? %>
   </div>
 <% end %>
