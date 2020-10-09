@@ -7,7 +7,6 @@ class UsersController < ApplicationController
 
   def show
     @gifs = @user.gifs.sorted
-    render 'gifs/index'
   end
 
   private

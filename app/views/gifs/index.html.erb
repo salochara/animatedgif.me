@@ -2,17 +2,7 @@
 
 <div class="container mx-auto mt-10 flex flex-wrap justify-center">
   <% @gifs.each do |gif| %>
-    <div class="w-64 m-3 rounded shadow flex flex-col justify-between">
-      <%= link_to image_tag(gif.image_url, class: "mx-auto"), gif %>
-      <div class="p-2 text-center">
-        <div class="text-s p-2">
-          <%= linked_tag_list gif %>
-        </div>
-        <div class="text-xs text-gray-700 mb-1">
-          Uploaded by <%= link_to gif.user.name, gif.user %>
-        </div>
-      </div>
-    </div>
+    <%= render @gifs %>
   <% end %>
 </div>
 

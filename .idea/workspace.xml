@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc4ced97-2b68-4e1e-a4b9-30126e6e4789" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/views/gifs/_gif.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/gifs_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/gifs_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/javascript/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/stylesheets/application.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/gifs/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/gifs/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/gifs/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/gifs/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/gifs/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/gifs/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/gifs/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/gifs/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/shared/_navbar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_navbar.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +38,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -46,6 +48,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/gifs" />
+      <recent name="$PROJECT_DIR$/app/views/gif" />
       <recent name="$PROJECT_DIR$/app/javascript/stylesheets" />
       <recent name="$PROJECT_DIR$/app/stylesheets/javascript" />
       <recent name="$PROJECT_DIR$/app/stylesheets" />
@@ -170,7 +174,7 @@
       <workItem from="1600882127477" duration="5803000" />
       <workItem from="1600990684217" duration="8628000" />
       <workItem from="1601420374121" duration="8515000" />
-      <workItem from="1602087463899" duration="11389000" />
+      <workItem from="1602087463899" duration="13740000" />
     </task>
     <servers />
   </component>
@@ -182,24 +186,24 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="53" y="163" key="SettingsEditor/0.23.1920.1057@0.23.1920.1057" timestamp="1602194422549" />
-    <state width="757" height="445" key="SwitcherDM" timestamp="1602194917233">
+    <state width="757" height="445" key="SwitcherDM" timestamp="1602201038766">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="757" height="445" key="SwitcherDM/0.23.1920.1057@0.23.1920.1057" timestamp="1602194917233" />
+    <state width="757" height="445" key="SwitcherDM/0.23.1920.1057@0.23.1920.1057" timestamp="1602201038766" />
     <state width="757" height="445" key="SwitcherDM/1280.23.1920.1057/0.23.1280.777@1280.23.1920.1057" timestamp="1601079885069" />
-    <state x="1147" y="306" width="586" height="490" key="find.popup" timestamp="1602195423586">
+    <state x="1147" y="306" width="586" height="490" key="find.popup" timestamp="1602201465638">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="1147" y="306" width="586" height="490" key="find.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1602195423586" />
+    <state x="1147" y="306" width="586" height="490" key="find.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1602201465638" />
     <state x="2427" y="306" width="586" height="490" key="find.popup/1280.23.1920.1057/0.23.1280.777@1280.23.1920.1057" timestamp="1601080025375" />
     <state x="1105" y="256" key="run.anything.popup" timestamp="1600892675668">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="1105" y="256" key="run.anything.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1600892675668" />
-    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1602196617245">
+    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1602200994342">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1602196617245" />
+    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1602200994342" />
     <state x="2385" y="258" width="670" height="676" key="search.everywhere.popup/1280.23.1920.1057/0.23.1280.777@1280.23.1920.1057" timestamp="1601079779869" />
   </component>
   <component name="XDebuggerManager">
