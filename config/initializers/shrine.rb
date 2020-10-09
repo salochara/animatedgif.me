@@ -2,6 +2,12 @@ require "shrine/storage/file_system"
 
 if Rails.env.production?
 
+elsif Rails.env.test?
+  require "shrine/storage/memory"
+  Shrine.storages = {
+      cache: Shrine::Storage::Memory.new,
+      store: Shrine::Storage::Memory.new,
+  }
 else
   Shrine.storages = {
       cache: Shrine::Storage::FileSystem.new("public", prefix: "uploads/cache"), # temporary
