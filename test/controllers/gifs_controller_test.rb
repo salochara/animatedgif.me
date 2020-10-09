@@ -3,6 +3,7 @@ require 'test_helper'
 class GifsControllerTest < ActionDispatch::IntegrationTest
   setup do
     @gif = gifs(:one)
+    @user = users(:one)
   end
 
   test "should get index" do
@@ -29,7 +30,7 @@ class GifsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should create gif if signed in" do
-    sign_in users(:one)
+    sign_in @user
 
     assert_difference('Gif.count') do
       post gifs_url, params: { gif: { image_data: @gif.image_data, user_id: @gif.user_id } }
@@ -44,7 +45,7 @@ class GifsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get edit" do
-    sign_in users(:one)
+    sign_in @user
 
     get edit_gif_url(@gif)
     assert_response :success
@@ -57,20 +58,23 @@ class GifsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update gif" do
-    sign_in users(:one)
+    sign_in @user
 
-    patch gif_url(@gif), params: { gif: { image_data: @gif.image_data, user_id: @gif.user_id } }
+    patch gif_url(@gif), params: { gif: { tag_list: "New tag" } }
     assert_redirected_to gif_url(@gif)
+
+    @gif.reload
+    assert_equal(["New tag"],@gif.tag_list)
   end
 
   test "should not update gif if signed out" do
-    patch gif_url(@gif), params: { gif: { image_data: @gif.image_data, user_id: @gif.user_id } }
+    patch gif_url(@gif), params: { gif: { tag_list: "New tag" } }
     assert_response :redirect
     assert_redirected_to new_user_session_path
   end
 
   test "should destroy gif" do
-    sign_in users(:one)
+    sign_in @user
 
     assert_difference('Gif.count', -1) do
       delete gif_url(@gif)
