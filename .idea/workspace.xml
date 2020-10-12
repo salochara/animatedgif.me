@@ -6,10 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="cc4ced97-2b68-4e1e-a4b9-30126e6e4789" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/gifs_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/gifs_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/gif.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/gif.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/gifs/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/gifs/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/shrine.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/shrine.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/test.sqlite3-0" beforeDir="false" afterPath="$PROJECT_DIR$/db/test.sqlite3-0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/test.sqlite3-1" beforeDir="false" afterPath="$PROJECT_DIR$/db/test.sqlite3-1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/gifs_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/gifs_controller_test.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/controllers/users_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/users_controller_test.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/models/gif_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/gif_test.rb" afterDir="false" />
     </list>
@@ -60,7 +62,7 @@
       <recent name="$PROJECT_DIR$/app/stylesheets" />
     </key>
   </component>
-  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.test_should_get_index">
+  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.test_requires_at_least_one_tag">
     <configuration name="_form" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://0.0.0.0:3000/gifs/_form">
       <method v="2" />
     </configuration>
@@ -161,6 +163,36 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TESTOPTS" VALUE="" />
       <method v="2" />
     </configuration>
+    <configuration name="test_requires_at_least_one_tag" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true" nameIsGenerated="true">
+      <module name="animatedgif.me" />
+      <predefined_log_file enabled="true" id="RUBY_TESTUNIT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-Itest" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/models/gif_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="^test_requires_at_least_one_tag$" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test_should_get_index" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true" nameIsGenerated="true">
       <module name="animatedgif.me" />
       <predefined_log_file enabled="true" id="RUBY_TESTUNIT" />
@@ -193,6 +225,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Test::Unit/Shoulda/Minitest.test_requires_at_least_one_tag" />
         <item itemvalue="Test::Unit/Shoulda/Minitest.test_should_get_index" />
         <item itemvalue="JavaScript Debug._form" />
       </list>
@@ -210,7 +243,7 @@
       <workItem from="1600882127477" duration="5803000" />
       <workItem from="1600990684217" duration="8628000" />
       <workItem from="1601420374121" duration="8515000" />
-      <workItem from="1602087463899" duration="19551000" />
+      <workItem from="1602087463899" duration="23601000" />
     </task>
     <servers />
   </component>
@@ -218,46 +251,46 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="739" height="290" key="GridCell.Tab.0.bottom" timestamp="1602263897208">
+    <state width="780" height="345" key="GridCell.Tab.0.bottom" timestamp="1602521880910">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="739" height="290" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1602263897208" />
-    <state width="739" height="290" key="GridCell.Tab.0.center" timestamp="1602263897207">
+    <state width="780" height="345" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1602521880910" />
+    <state width="780" height="345" key="GridCell.Tab.0.center" timestamp="1602521880909">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="739" height="290" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1602263897207" />
-    <state width="739" height="290" key="GridCell.Tab.0.left" timestamp="1602263897206">
+    <state width="780" height="345" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1602521880909" />
+    <state width="780" height="345" key="GridCell.Tab.0.left" timestamp="1602521880909">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="739" height="290" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1602263897206" />
-    <state width="739" height="290" key="GridCell.Tab.0.right" timestamp="1602263897207">
+    <state width="780" height="345" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1602521880909" />
+    <state width="780" height="345" key="GridCell.Tab.0.right" timestamp="1602521880910">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="739" height="290" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1602263897207" />
-    <state width="739" height="290" key="GridCell.Tab.1.bottom" timestamp="1602263897209">
+    <state width="780" height="345" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1602521880910" />
+    <state width="780" height="345" key="GridCell.Tab.1.bottom" timestamp="1602521880912">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="739" height="290" key="GridCell.Tab.1.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1602263897209" />
-    <state width="739" height="290" key="GridCell.Tab.1.center" timestamp="1602263897208">
+    <state width="780" height="345" key="GridCell.Tab.1.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1602521880912" />
+    <state width="780" height="345" key="GridCell.Tab.1.center" timestamp="1602521880911">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="739" height="290" key="GridCell.Tab.1.center/0.23.1920.1057@0.23.1920.1057" timestamp="1602263897208" />
-    <state width="739" height="290" key="GridCell.Tab.1.left" timestamp="1602263897208">
+    <state width="780" height="345" key="GridCell.Tab.1.center/0.23.1920.1057@0.23.1920.1057" timestamp="1602521880911" />
+    <state width="780" height="345" key="GridCell.Tab.1.left" timestamp="1602521880911">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="739" height="290" key="GridCell.Tab.1.left/0.23.1920.1057@0.23.1920.1057" timestamp="1602263897208" />
-    <state width="739" height="290" key="GridCell.Tab.1.right" timestamp="1602263897208">
+    <state width="780" height="345" key="GridCell.Tab.1.left/0.23.1920.1057@0.23.1920.1057" timestamp="1602521880911" />
+    <state width="780" height="345" key="GridCell.Tab.1.right" timestamp="1602521880912">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="739" height="290" key="GridCell.Tab.1.right/0.23.1920.1057@0.23.1920.1057" timestamp="1602263897208" />
+    <state width="780" height="345" key="GridCell.Tab.1.right/0.23.1920.1057@0.23.1920.1057" timestamp="1602521880912" />
     <state x="53" y="163" key="SettingsEditor" timestamp="1602194422549">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="53" y="163" key="SettingsEditor/0.23.1920.1057@0.23.1920.1057" timestamp="1602194422549" />
-    <state width="757" height="445" key="SwitcherDM" timestamp="1602265499109">
+    <state width="757" height="445" key="SwitcherDM" timestamp="1602543450459">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="757" height="445" key="SwitcherDM/0.23.1920.1057@0.23.1920.1057" timestamp="1602265499109" />
+    <state width="757" height="445" key="SwitcherDM/0.23.1920.1057@0.23.1920.1057" timestamp="1602543450459" />
     <state width="757" height="445" key="SwitcherDM/1280.23.1920.1057/0.23.1280.777@1280.23.1920.1057" timestamp="1601079885069" />
     <state x="1147" y="306" width="586" height="490" key="find.popup" timestamp="1602267327276">
       <screen x="0" y="23" width="1920" height="1057" />
@@ -268,10 +301,10 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="1105" y="256" key="run.anything.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1600892675668" />
-    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1602519125763">
+    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1602543547877">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1602519125763" />
+    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1602543547877" />
     <state x="2385" y="258" width="670" height="676" key="search.everywhere.popup/1280.23.1920.1057/0.23.1280.777@1280.23.1920.1057" timestamp="1601079779869" />
   </component>
   <component name="XDebuggerManager">
@@ -287,5 +320,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/animatedgif_me@test_should_get_index.rcov" NAME="test_should_get_index Coverage Results" MODIFIED="1602263874424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="animatedgif.me" />
+    <SUITE FILE_PATH="coverage/animatedgif_me@test_requires_at_least_one_tag.rcov" NAME="test_requires_at_least_one_tag Coverage Results" MODIFIED="1602521869778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="animatedgif.me" />
   </component>
 </project>

@@ -35,7 +35,6 @@ class GifsController < ApplicationController
   # POST /gifs.json
   def create
     @gif = current_user.gifs.new(gif_params)
-
     respond_to do |format|
       if @gif.save
         format.html { redirect_to @gif, notice: 'Gif was successfully created.' }
@@ -81,7 +80,7 @@ class GifsController < ApplicationController
     # TIP: Cool params defnition
     def gif_params
       permitted = [:tag_list]
-      permitted += [:image] if action_name == 'new'
+      permitted += [:image, :image_remote_url] if action_name == 'create'
 
       params.require(:gif).permit(*permitted)
     end
