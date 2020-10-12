@@ -88,4 +88,10 @@ class GifsControllerTest < ActionDispatch::IntegrationTest
     assert_response :redirect
     assert_redirected_to new_user_session_path
   end
+
+  test 'renders catch all' do
+    get random_gif_url(tag: "test")
+    assert_response :success
+  end
+
 end
