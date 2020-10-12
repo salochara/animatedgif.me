@@ -8,11 +8,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/gifs_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/gifs_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/gif.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/gif.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/gifs/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/gifs/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/shrine.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/shrine.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/test.sqlite3-0" beforeDir="false" afterPath="$PROJECT_DIR$/db/test.sqlite3-0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/test.sqlite3-1" beforeDir="false" afterPath="$PROJECT_DIR$/db/test.sqlite3-1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/users_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/users_controller_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/gifs_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/gifs_controller_test.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/models/gif_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/gif_test.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -243,7 +241,7 @@
       <workItem from="1600882127477" duration="5803000" />
       <workItem from="1600990684217" duration="8628000" />
       <workItem from="1601420374121" duration="8515000" />
-      <workItem from="1602087463899" duration="23601000" />
+      <workItem from="1602087463899" duration="24933000" />
     </task>
     <servers />
   </component>
@@ -292,19 +290,19 @@
     </state>
     <state width="757" height="445" key="SwitcherDM/0.23.1920.1057@0.23.1920.1057" timestamp="1602543450459" />
     <state width="757" height="445" key="SwitcherDM/1280.23.1920.1057/0.23.1280.777@1280.23.1920.1057" timestamp="1601079885069" />
-    <state x="1147" y="306" width="586" height="490" key="find.popup" timestamp="1602267327276">
+    <state x="1147" y="306" width="586" height="490" key="find.popup" timestamp="1602544620473">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="1147" y="306" width="586" height="490" key="find.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1602267327276" />
+    <state x="1147" y="306" width="586" height="490" key="find.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1602544620473" />
     <state x="2427" y="306" width="586" height="490" key="find.popup/1280.23.1920.1057/0.23.1280.777@1280.23.1920.1057" timestamp="1601080025375" />
     <state x="1105" y="256" key="run.anything.popup" timestamp="1600892675668">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="1105" y="256" key="run.anything.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1600892675668" />
-    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1602543547877">
+    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1602545075410">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1602543547877" />
+    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1602545075410" />
     <state x="2385" y="258" width="670" height="676" key="search.everywhere.popup/1280.23.1920.1057/0.23.1280.777@1280.23.1920.1057" timestamp="1601079779869" />
   </component>
   <component name="XDebuggerManager">
