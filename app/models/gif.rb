@@ -12,7 +12,7 @@ class Gif < ApplicationRecord
   validate :has_at_least_one_tag # validate (no s) because it's my own method
 
   def has_at_least_one_tag
-    if tag_list.size < 1
+    unless tag_list.present?
       errors.add(:tag_list, "must have at least one tag")
     end
   end

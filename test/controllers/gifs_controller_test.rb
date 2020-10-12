@@ -33,7 +33,8 @@ class GifsControllerTest < ActionDispatch::IntegrationTest
     sign_in @user
 
     assert_difference('Gif.count') do
-      post gifs_url, params: { gif: { image_data: @gif.image_data, user_id: @gif.user_id } }
+      file = Rack::Test::UploadedFile.new('test/files/giphy.gif','image/gif')
+      post gifs_url, params: { gif: { image: file, user_id: @gif.user_id , tag_list: "test"} }
     end
 
     assert_redirected_to gif_url(Gif.last)
