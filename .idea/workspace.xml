@@ -3,8 +3,39 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:heroku" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc4ced97-2b68-4e1e-a4b9-30126e6e4789" name="Default Changelist" comment="" />
+    <list default="true" id="cc4ced97-2b68-4e1e-a4b9-30126e6e4789" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -324,10 +355,10 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="1105" y="256" key="run.anything.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1600892675668" />
-    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1602703829066">
+    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1602705251172">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1602703829066" />
+    <state x="1105" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1602705251172" />
     <state x="2385" y="258" width="670" height="676" key="search.everywhere.popup/1280.23.1920.1057/0.23.1280.777@1280.23.1920.1057" timestamp="1601079779869" />
   </component>
   <component name="XDebuggerManager">
