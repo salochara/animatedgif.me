@@ -6,7 +6,7 @@ ruby '2.6.6'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
+# gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -56,4 +56,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'acts-as-taggable-on', '~> 6.0'
 gem 'devise', '~> 4.7', '>= 4.7.3'
 gem 'name_of_person', '~> 1.1', '>= 1.1.1'
+gem 'pg'
 gem 'shrine', '~> 3.2', '>= 3.2.2'
