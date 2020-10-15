@@ -18,7 +18,7 @@
     </div>
   </div>
 
-  <div class= "flex text-xs " data-controller="clipboard" >
+  <div class= "flex text-sm " data-controller="clipboard" >
     <%= text_field_tag nil, full_gif_url(@gif), data: { target: "clipboard.source" }, class: "form-control" %>
     <button data-action="click->clipboard#copy" data-target="clipboard.button" class="btn btn-purple rounded-r" >Copy</button>
   </div>
