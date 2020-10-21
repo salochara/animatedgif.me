@@ -34,10 +34,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc4ced97-2b68-4e1e-a4b9-30126e6e4789" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/javascript/controllers/search_controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/shared/_navbar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_navbar.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/gifs/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/gifs/index.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -350,10 +347,10 @@
     </state>
     <state width="757" height="445" key="SwitcherDM/0.23.1920.1057@0.23.1920.1057" timestamp="1603300726146" />
     <state width="757" height="445" key="SwitcherDM/1280.23.1920.1057/0.23.1280.777@1280.23.1920.1057" timestamp="1601079885069" />
-    <state x="1147" y="306" width="586" height="490" key="find.popup" timestamp="1603237106370">
+    <state x="1147" y="306" width="586" height="490" key="find.popup" timestamp="1603302415504">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="1147" y="306" width="586" height="490" key="find.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1603237106370" />
+    <state x="1147" y="306" width="586" height="490" key="find.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1603302415504" />
     <state x="2427" y="306" width="586" height="490" key="find.popup/1280.23.1920.1057/0.23.1280.777@1280.23.1920.1057" timestamp="1601080025375" />
     <state x="1105" y="256" key="run.anything.popup" timestamp="1600892675668">
       <screen x="0" y="23" width="1920" height="1057" />
