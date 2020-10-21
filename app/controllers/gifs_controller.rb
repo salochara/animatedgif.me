@@ -79,9 +79,11 @@ class GifsController < ApplicationController
     # Only allow a list of trusted parameters through.
     # TIP: Cool params defnition
     def gif_params
+=begin
       permitted = [:tag_list]
-      permitted += [:image, :image_remote_url] if action_name == 'create'
+      permitted += [:image, :image_remote_url, photos: []] if action_name == 'create'
+=end
 
-      params.require(:gif).permit(*permitted)
+      params.require(:gif).permit(:image, :tag_list, :image_remote_url, :photo)
     end
 end

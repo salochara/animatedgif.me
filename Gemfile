@@ -54,6 +54,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'acts-as-taggable-on', '~> 6.0'
+gem 'cloudinary', '~> 1.16.0'
 gem 'devise', '~> 4.7', '>= 4.7.3'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'name_of_person', '~> 1.1', '>= 1.1.1'

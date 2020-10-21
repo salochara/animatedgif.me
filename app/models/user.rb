@@ -7,4 +7,6 @@ class User < ApplicationRecord
   has_person_name
 
   has_many :gifs
+  has_one_attached :photo
+
 end

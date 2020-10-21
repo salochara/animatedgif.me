@@ -2,6 +2,7 @@ class Gif < ApplicationRecord
   include ImageUploader::Attachment(:image)
 
   belongs_to :user
+  has_one_attached :photo
 
   acts_as_taggable
 

@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    @gifs = @user.gifs.sorted
+    @gifs = @user.gifs
   end
 
   private

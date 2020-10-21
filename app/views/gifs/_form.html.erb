@@ -21,10 +21,14 @@
         <%= form.text_field :image_remote_url, placeholder: "URL to Gif", class: "form-control" %>
 
 
+
         <%= form.label :image, "Or upload a Gif" %>
-        <!--    Hidden field must come before the file field -->
+<!--         Hidden field must come before the file field -->
         <%= form.hidden_field :image, value: form.object.cached_image_data %>
         <%= form.file_field :image, class: "form-control" %>
+
+
+        <%= form.file_field :photo, as: :file %>
       <% end %>
 
     </div>
